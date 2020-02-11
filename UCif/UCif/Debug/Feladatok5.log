@@ -1,0 +1,3 @@
+﻿  Egyik.cpp
+C:\Users\degin\source\repos\Feladatok5\Feladatok5\Egyik.cpp(15,9): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  Feladatok5.vcxproj -> C:\Users\degin\source\repos\Feladatok5\Debug\Feladatok5.exe
