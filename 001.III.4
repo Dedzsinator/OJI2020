@@ -1,0 +1,33 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+ifstream f("in.in");
+ofstream g("out.out");
+
+int v[100],n, a;
+
+int sub(int v[], int x, int b) {
+	int c = 0;
+
+	for (int i = 0; i < x; i++) {
+		if (v[i] < b) {
+			c++;
+		}
+	}
+
+	return c;
+}
+
+int main() {
+	
+	f >> n;
+	f >> a;
+	for (int i = 0; i < n; i++) {
+		f >> v[i];
+	}
+	int z = sub(v, n, a);
+	g << z;
+
+	return 0;
+}
