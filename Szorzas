@@ -40,7 +40,7 @@ int main() {
     {
         g << " " << c[i][j];
         if(j == n1-1)
-            cout << endl;
+            g << endl;
     }
 
     return 0;
