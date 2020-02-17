@@ -4,6 +4,16 @@ using namespace std;
 
 ifstream f("in.in");
 ofstream g("out.out");
+int fact(int n) {
+    int res[n] = {0};
+   if (n >= 0) {
+      res[0] = 1;
+      for (int i = 1; i <= n; ++i) {
+         res[i] = i * res[i - 1];
+      }
+      return res[n];
+   }
+}
 
 int fib(int n) {
 	int f[n + 2];
@@ -20,10 +30,16 @@ int fib(int n) {
 }
 
 int main() {
-	int n;
+	int n,z;
+	f >> z;
 	f >> n;
 
-	g << fib(n);
+	if (z == 1) {
+		g << fib(n);
+	}
+	else {
+		g << fact(n);
+	}
 
 	return 0;
 }
